@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0%;
+}
+
+/* ToolBox Container */
+.toolbox-cont{
+    height: 5rem;
+    background-color: #57606f;
+    display: flex;
+    align-items: center;
+}
+
+.toolbox-cont > *{
+    margin-left: 4rem;
+    border-radius: 3px;
+}
+
+/* Priority Colors Container */
+.toolbox-priority-cont{
+    height: 3.5rem;
+    width: 16rem;
+    display: flex;
+    background-color: #4b7bec;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Action Buttons */
+.action-btn-cont{
+    height: 3.5rem;
+    width: 8rem;
+    display: flex;
+    background-color: black;
+}
+
+.action-btn-cont > *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    width: 50%;
+    color: white;
+}
+
+.action-add:hover{
+    color: green;
+}
+.action-rem:hover{
+    color: red;
+}
+
+/* Priority Colors */
+.color{
+    height: 1.5rem;
+    width: 3rem;
+    background-color: lightpink;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: green;
+}
+
+.pink{
+    background-color: pink;
+}
