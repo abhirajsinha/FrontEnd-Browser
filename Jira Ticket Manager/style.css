@@ -55,9 +55,45 @@ body{
     color: red;
 }
 
+.modal-cont{
+    height: 50vh;
+    width: 45vw;
+    background-color: aqua;
+    position: absolute;
+    top: calc(( 100vh - 50vh )/2);
+    left: calc(( 100vw - 45vw )/2);
+    display: flex;
+}
+
+.priority-colors-cont{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.textarea-cont{
+    height: 100%;
+    width: 75%;
+    outline: none;
+    resize: none;
+    background-color:white;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.priority-color{
+    height: 4rem;
+    width: 60%;
+    background-color: lightsalmon;
+}
+
 /* Priority Colors */
 .color{
-    height: 1.5rem;
+    height: 1.3rem;
     width: 3rem;
     background-color: lightpink;
 }
