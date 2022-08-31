@@ -117,7 +117,7 @@ body{
 /* Main Container */
 
 .main-cont{
-    background-color: white;
+    /* background-color: red; */
     display: flex;
     flex-wrap: wrap;
     padding: 2rem;
@@ -134,7 +134,7 @@ body{
 
 .ticket-lock{
     height: 2rem;
-    background-color: #f1f2f6;
+    /* background-color: #f1f2f6; */
     display: flex;
     font-size: 1.5rem;
     padding-right: 1rem;

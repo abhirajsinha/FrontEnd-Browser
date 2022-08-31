@@ -79,13 +79,15 @@ function handleLock(ticket){
     let ticketLockElem = ticket.querySelector(".ticket-lock");
     let ticketLock = ticketLockElem.children[0];
     ticketLock.addEventListener("click",(e)=>{
-        if(ticketLock.classList.contains(lockClass)){
-            ticketLock.classList.remove(lockClass);
-            ticket.classList.add(unlockClass);
-        }else{
-            ticketLock.classList.remove(unlockClass);
-            ticket.classList.add(lockClass);
-        }
+        // if(ticketLock.classList.contains(lockClass)){
+        //     ticketLock.classList.remove(lockClass);
+        //     ticket.classList.add(unlockClass);
+        // }else{
+        //     ticketLock.classList.remove(unlockClass);
+        //     ticket.classList.add(lockClass);
+        // }
+
+        ticketLock.classList.toggle(lockClass);
+        ticketLock.classList.toggle(unlockClass);
     })
 }
-
