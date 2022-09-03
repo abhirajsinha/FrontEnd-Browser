@@ -66,6 +66,7 @@ function createTicket(ticketColor, ticketTask, ticketID){
     mainCont.appendChild(ticketCont);
     handleRemoval(ticketCont);
     handleLock(ticketCont);
+    handleColor(ticketCont);
 }
 
 function handleRemoval(ticket){
@@ -77,8 +78,10 @@ function handleRemoval(ticket){
 
 function handleLock(ticket){
     let ticketLockElem = ticket.querySelector(".ticket-lock");
+    let taskarea = ticket.querySelector(".task-area");
     let ticketLock = ticketLockElem.children[0];
     ticketLock.addEventListener("click",(e)=>{
+       
         // if(ticketLock.classList.contains(lockClass)){
         //     ticketLock.classList.remove(lockClass);
         //     ticket.classList.add(unlockClass);
@@ -89,5 +92,28 @@ function handleLock(ticket){
 
         ticketLock.classList.toggle(lockClass);
         ticketLock.classList.toggle(unlockClass);
+
+        if(ticketLock.classList.contains(unlockClass)){
+            taskarea.setAttribute("contenteditable","true");
+        }
+        if(ticketLock.classList.contains(lockClass)){
+            taskarea.setAttribute("contenteditable","false");
+        }
+    })
+}
+
+function handleColor(ticket){
+    let ticketColor = ticket.querySelector(".ticket-color");
+    ticketColor.addEventListener("click", (e) => {
+        let currentTicketColor = ticketColor.classList[1];
+        //Get the index of current color
+        let currentTicketColorIdx = colors.findIndex((color) => {
+            return currentTicketColor === color;
+        })
+        currentTicketColorIdx++;
+        let newTicketColorIdx = currentTicketColorIdx%colors.length;
+        let newTicketColor =  colors[newTicketColorIdx];
+        ticketColor.classList.remove(currentTicketColor);
+        ticketColor.classList.add(newTicketColor);
     })
 }
