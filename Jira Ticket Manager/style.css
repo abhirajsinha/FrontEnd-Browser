@@ -55,4 +55,17 @@ body{
     border-radius: 0.5rem;
     width: 9rem;
     background-color: #6d7c7e;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttons{
+    height: 67%;
+    width: 26%;
+    /* border: 1px solid red; */
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
