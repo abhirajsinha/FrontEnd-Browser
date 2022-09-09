@@ -7,15 +7,22 @@ body{
     padding: 0%;
 }
 
-.upper-cont{
-    height: 4rem;
-    width: 100vw;
+.toolbar{
+    height: 12vh;
+    background-color: #2d3436;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.color{
-    height: 10px;
-    width: 5px;
+.filter-container{
+    height: 60%;
+    border: 1px solid red;
+    width: 22rem;
 }
-.div1{
-    background-color: pink;
+
+.action-container{
+    height: 60%;
+    border: 1px solid yellow;
+    width: 9rem;
 }
