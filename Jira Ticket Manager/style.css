@@ -124,7 +124,7 @@ body{
     height: 100%;
     width: 100%;
     outline: none;
-    
+    font-size: 1.5rem;
 }
 
 .filter{
