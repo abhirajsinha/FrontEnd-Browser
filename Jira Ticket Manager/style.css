@@ -44,15 +44,15 @@ body{
 }
 
 /* Colors */
-.pink{
+.lightpink{
     background-color: lightpink;
 }
 
-.blue{
+.lightblue{
     background-color: lightblue;
 }
 
-.green{
+.lightgreen{
     background-color: lightgreen;
 }
 
@@ -78,6 +78,7 @@ body{
     /* border: 1px solid red; */
     border-radius: 0.3rem;
     display: flex;
+    color: white;
     justify-content: center;
     align-items: center;
 }
@@ -89,5 +90,44 @@ body{
 
 /* Main-Container */
 .main-container{
-    height: 85vh;
+    display: flex;
+    height: 88vh;
+}
+
+
+/* Modal Container */
+.modal-container{
+    display: flex;
+    height: 16rem;
+    width: 35rem;
+    margin: 0 auto;
+    margin-top: 15rem;
+    background-color: yellow;
+}
+
+.input-container{
+    height: 100%;
+    width: 72%;
+    background-color: red;
+}
+
+.modal-filter-container{
+    width: 28%;
+    background-color: #444444;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.modal-input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    
+}
+
+.filter{
+    height: 14%;
+    width: 45%;
 }
