@@ -136,3 +136,7 @@ body{
     height: 14%;
     width: 45%;
 }
+
+.border{
+    border: 0.2rem solid white;
+}
